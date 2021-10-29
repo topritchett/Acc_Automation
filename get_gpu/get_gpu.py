@@ -15,9 +15,9 @@ def get_gpu(REDFISH_OBJ, SYSTEM_URL):
     
 def main():
     
-    SYSTEM_URL = "https://16.85.161.201"
-    LOGIN_ACCOUNT = "admin"
-    LOGIN_PASSWORD = "admin123"
+    SYSTEM_URL = "https://XX.XX.XX.XX"
+    LOGIN_ACCOUNT = "user"
+    LOGIN_PASSWORD = "password"
     try:
         REDFISH_OBJ = redfish.redfish_client(base_url=SYSTEM_URL, username=LOGIN_ACCOUNT, password=LOGIN_PASSWORD, timeout=2, max_retry=1)
         REDFISH_OBJ.login()
